@@ -133,15 +133,3 @@ inputs = tokenizer.apply_chat_template(
 outputs = model.generate(inputs, max_new_tokens=200, temperature=0.7)
 print(tokenizer.decode(outputs[0][inputs.shape[1]:], skip_special_tokens=True))
 ```
-
----
-
-## Portfolio write-up template
-
-> Fine-tuned Qwen2.5-1.5B-Instruct using QLoRA (PEFT) on a custom
-> combined dataset of 7,000 math, reasoning, and code examples.
-> Trained on a consumer GPU (4GB VRAM) using 4-bit NF4 quantization
-> and gradient offloading. Improved GSM8K math reasoning accuracy
-> from ~38% to ~58%. Model outputs structured Chain-of-Thought
-> explanations across all three domains.
-> Stack: Python, HuggingFace Transformers, TRL, Unsloth, bitsandbytes.
