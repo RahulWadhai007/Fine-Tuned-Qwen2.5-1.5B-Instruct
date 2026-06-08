@@ -1,0 +1,28 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+unsloth_compiled_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Model Weights & Adapters
+lora-adapter/
+qwen-math-code-reasoning/
+*.safetensors
+*.bin
+
+# Archives & Large Files
+*.zip
+*.tar.gz
+
+# IDEs
+.vscode/
+.idea/
